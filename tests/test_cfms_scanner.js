@@ -24,9 +24,15 @@ MockGR.prototype.query = function() { this._idx = -1; this._filtered = this._row
 MockGR.prototype.next = function() { this._idx++; if(this._limit&&this._idx>=this._limit) return false; return this._idx<this._filtered.length; };
 MockGR.prototype.getValue = function(f) { if(this._idx>=0&&this._idx<this._filtered.length) return String(this._filtered[this._idx][f]||""); return ""; };
 MockGR.prototype.getUniqueValue = function() { if(this._idx>=0&&this._idx<this._filtered.length) return this._filtered[this._idx]["sys_id"]||"mock-id"; return "mock-id"; };
+MockGR.prototype.isValidRecord = function() { return this._idx>=0&&this._idx<this._filtered.length; };
 
 global.GlideRecord = function(table) { if(DB[table]) return new MockGR(table, DB[table]); return new MockGR(table); };
 global.GlideDateTime = function(v){ this._v=v||new Date().toISOString(); this.getDisplayValue=function(){return this._v;}; this.getDisplayValueInternal=function(){return this._v.replace(/[-:T.Z]/g,"");}; };
+global.gs = {
+  info: function(msg){ console.log('[gs.info] ' + msg); },
+  warn: function(msg){ console.log('[gs.warn] ' + msg); },
+  error: function(msg){ console.log('[gs.error] ' + msg); }
+};
 
 function stripHeader(code){ return code.replace(/^\/\*.*?\*\//s, ''); }
 

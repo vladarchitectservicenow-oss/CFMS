@@ -1,0 +1,20 @@
+{
+  "name": "cfms-servicenow-scanner",
+  "version": "1.0.0",
+  "description": "ServiceNow Catalog Field Mapping Scanner - Pre-upgrade catalog variable audit",
+  "main": "src/CFMSScanner.js",
+  "scripts": {
+    "test": "node tests/test_cfms_scanner.js"
+  },
+  "keywords": ["servicenow", "catalog", "upgrade", "audit", "deprecated", "australia"],
+  "author": "Vladimir Kapustin <vladarchitect@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladarchitectservicenow-oss/CFMS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vladarchitectservicenow-oss/CFMS/issues"
+  },
+  "homepage": "https://github.com/vladarchitectservicenow-oss/CFMS#readme"
+}
