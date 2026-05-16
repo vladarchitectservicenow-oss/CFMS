@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-05-16 00:00:00">
+  <sys_app action="INSERT_OR_UPDATE">
+    <name>Catalog Field Mapping Scanner</name>
+    <scope>x_cfms</scope>
+    <version>1.0.0</version>
+    <vendor>Vladimir Kapustin (vladarchitect)</vendor>
+    <description>Detects deprecated legacy catalog variables and field mappings pre-Australia.
+Scans sc_cat_item, item_option_new, order guide wizards.
+    </description>
+    <license>AGPL-3.0-only</license>
+    <active>true</active>
+    <enforce_license>log</enforce_license>
+    <js_level>helsinki_es5</js_level>
+    <owner>Vladimir Kapustin</owner>
+  </sys_app>
+</unload>
