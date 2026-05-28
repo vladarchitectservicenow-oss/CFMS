@@ -57,8 +57,8 @@ var DB = {
 };
 
 // Load modules
-eval(stripHeader(fs.readFileSync('/home/crixus/agentic-loop/output/CFMS/src/CFMSScanner.js','utf8')));
-eval(stripHeader(fs.readFileSync('/home/crixus/agentic-loop/output/CFMS/src/CFMSEngine.js','utf8')));
+eval(stripHeader(fs.readFileSync('/tmp/cfms_prod/src/CFMSScanner.js','utf8')));
+eval(stripHeader(fs.readFileSync('/tmp/cfms_prod/src/CFMSEngine.js','utf8')));
 
 // ============================================================================
 // TESTS

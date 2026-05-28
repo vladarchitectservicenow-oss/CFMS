@@ -1,4 +1,7 @@
 /**
+ * Copyright (c) 2026 Vladimir Kapustin
+ * SPDX-License-Identifier: AGPL-3.0-only
+ *
  * CFMSReportRenderer.js
  * ServiceNow Catalog Field Mapping Scanner — Report Renderer
  * Generates HTML and CSV reports from scan results.

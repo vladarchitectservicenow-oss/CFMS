@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2026 Vladimir Kapustin
+  SPDX-License-Identifier: AGPL-3.0-only
+-->
 <unload unload_date="2026-05-16 20:00:00">
   <sys_app action="INSERT_OR_UPDATE">
     <active>true</active>

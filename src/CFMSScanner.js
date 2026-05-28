@@ -1,4 +1,7 @@
 /**
+ * Copyright (c) 2026 Vladimir Kapustin
+ * SPDX-License-Identifier: AGPL-3.0-only
+ *
  * CFMSScanner.js
  * ServiceNow Catalog Field Mapping Scanner
  * Scans catalog items for deprecated legacy variable types.
